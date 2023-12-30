@@ -50,5 +50,4 @@ hidding exe process
 
 exe file br br run ho jab jab bhi pc shutdown hokr on ho
 
-
-
+https://www.keirstenbrager.tech/malware-how-it-hides-detects-and-reacts/#:~:text=Malware%20can%20remain%20an%20advanced,itself%20every%20time%20it%20replicates.
