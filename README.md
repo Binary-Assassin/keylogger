@@ -18,7 +18,7 @@
 
 [+] If u think u r not receiving the emails make sure you check your spam of the destination mail
 
-# linux
+# Usage
 ``` shell
 sudo apt-get update
 sudo apt-get install python3
