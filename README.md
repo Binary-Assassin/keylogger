@@ -2,7 +2,7 @@
 
 # NOTE:
 
-- THIS IS ONLY FOR EDUCATIONAL PURPOSE ONLY
+- **FOR EDUCATIONAL PURPOSES ONLY**
 
 
 - The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
