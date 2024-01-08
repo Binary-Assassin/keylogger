@@ -23,7 +23,7 @@ pip install secure-smtplib
 pip install PyMails
 git clone https://github.com/Binary-Assassin/keylogger
 ```
-[-] still not finding libraries refer to
+still not finding libraries refer to
 
     https://pypi.org/search/
 
