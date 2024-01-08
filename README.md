@@ -35,7 +35,7 @@ git clone https://github.com/Binary-Assassin/keylogger
 
 
 # Remainings
-
+### to-do list
 make it commpatible to windows
 
 the code should be able to access the powershell of the windows
