@@ -1,17 +1,17 @@
 # KeyLogger
 
-# **Note:**
+## **Note:**
 
 - **FOR EDUCATIONAL PURPOSES ONLY**
 - The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
 
-# Details
+## Details
 
 - Ensure that you carefully read the comments and implement the required changes as specified in the script.
 - Input your mail credentials for the SMTP connection.
 - Specify the destination emails to receive the logged keys.
 - If you are not receiving emails, check your spam folder in the destination mail.
-# Usage
+## Usage
 ``` shell
 sudo apt-get update
 sudo apt-get install python3
@@ -27,7 +27,7 @@ still not finding libraries refer to
 
 
 
-# Remainings
+## Remainings
 ### to-do list
 make it commpatible to windows
 
