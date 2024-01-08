@@ -8,7 +8,7 @@ The provided code is incomplete; you need to make necessary changes for the scri
 
 
  
-## Details
+## Instructions
 - Ensure that you carefully read the comments and implement the required changes as specified in the script.
 - Input your mail credentials for the SMTP connection.
 - Specify the destination emails to receive the logged keys.
