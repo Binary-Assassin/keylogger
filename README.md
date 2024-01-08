@@ -2,8 +2,8 @@
 
 ## **Note:**
 
-- **FOR EDUCATIONAL PURPOSES ONLY**
-- The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
+ **FOR EDUCATIONAL PURPOSES ONLY**
+ The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
 
 ## Details
 
