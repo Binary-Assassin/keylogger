@@ -1,24 +1,19 @@
 # KeyLogger
 
-# NOTE:
+## **Note:**
 
-[+] THIS IS ONLY FOR EDUCATIONAL PURPOSE ONLY
+**FOR EDUCATIONAL PURPOSES ONLY**
+
+The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
 
 
-[+] The code is not completed u have to make necessary changes for the script to be completely executable.
-
-
-# Description
-
-[+] Make sure u read the comments and make the necessary changes as mentioned in the script
-
-[+] Input your mail credentials for the SMPT connection
-
-[+] Make sure you also write the destination mails so that the keys get mailed u
-
-[+] If u think u r not receiving the emails make sure you check your spam of the destination mail
-
-# linux
+ 
+## Instructions
+- Ensure that you carefully read the comments and implement the required changes as specified in the script.
+- Input your mail credentials for the SMTP connection.
+- Specify the destination emails to receive the logged keys.
+- If you are not receiving emails, check your spam folder in the destination mail.
+## Usage
 ``` shell
 sudo apt-get update
 sudo apt-get install python3
@@ -28,13 +23,13 @@ pip install secure-smtplib
 pip install PyMails
 git clone https://github.com/Binary-Assassin/keylogger
 ```
-[-] still not finding libraries refer to
+still not finding libraries refer to
 
     https://pypi.org/search/
 
 
 
-# Remainings
+## Remainings
 ### to-do list
 make it commpatible to windows
 
