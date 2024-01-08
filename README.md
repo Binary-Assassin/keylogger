@@ -1,13 +1,11 @@
 # KeyLogger
 
-# NOTE:
+# **IMPORTANT:**
 
 - **FOR EDUCATIONAL PURPOSES ONLY**
-
-
 - The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
 
-# Description
+# Details
 
 - Ensure that you carefully read the comments and implement the required changes as specified in the script.
 - Input your mail credentials for the SMTP connection.
