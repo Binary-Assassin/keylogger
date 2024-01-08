@@ -2,10 +2,12 @@
 
 ## **Note:**
 
- **FOR EDUCATIONAL PURPOSES ONLY**
- The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
+**FOR EDUCATIONAL PURPOSES ONLY**
 
-## Details
+The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
+
+
+ 
 
 - Ensure that you carefully read the comments and implement the required changes as specified in the script.
 - Input your mail credentials for the SMTP connection.
