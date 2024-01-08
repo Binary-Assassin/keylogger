@@ -5,19 +5,14 @@
 - THIS IS ONLY FOR EDUCATIONAL PURPOSE ONLY
 
 
-- The code is not completed u have to make necessary changes for the script to be completely executable.
-
+- The provided code is incomplete; you need to make necessary changes for the script to be fully executable.
 
 # Description
 
-[+] Make sure u read the comments and make the necessary changes as mentioned in the script
-
-[+] Input your mail credentials for the SMPT connection
-
-[+] Make sure you also write the destination mails so that the keys get mailed u
-
-[+] If u think u r not receiving the emails make sure you check your spam of the destination mail
-
+- Ensure that you carefully read the comments and implement the required changes as specified in the script.
+- Input your mail credentials for the SMTP connection.
+- Specify the destination emails to receive the logged keys.
+- If you are not receiving emails, check your spam folder in the destination mail.
 # Usage
 ``` shell
 sudo apt-get update
